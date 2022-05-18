@@ -6,7 +6,16 @@ import {
 export default defineConfig({
   presets: [
     presetUno(),
-    presetIcons()
+    presetIcons({
+      scale: 1.2,
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle'
+      },
+      collections: {
+        carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default)
+      }
+    })
   ],
   transformers: [
     transformerDirectives(),
