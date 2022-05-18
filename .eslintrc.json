@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@yangss/eslint-config-vue",
+    ".eslintrc-auto-import.json"
+  ],
+  "ignorePatterns": [
+    "components.d.ts",
+    "auto-imports.d.ts"
+  ]
+}
