@@ -11,7 +11,8 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "preserveValueImports": true,
-    // "importsNotUsedAsValues": true,
+    "useDefineForClassFields": true,
+    "importsNotUsedAsValues": "error",
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {

@@ -3,5 +3,5 @@
 Vue3 + Vite + TypeScript + UnoCSS
 
 ```sh
-npx degit yangss/vue-app-starter my-vue-app
+npx degit yangss3/vue-app-starter my-vue-app
 ```

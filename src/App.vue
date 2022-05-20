@@ -1,3 +1,3 @@
 <template>
-  <HelloWorld />
+  <HelloWorld msg="Vue App Start Template" />
 </template>

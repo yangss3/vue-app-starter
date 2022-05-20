@@ -1,14 +1,22 @@
 import { defineConfig } from 'vite'
+import path from 'node:path'
 import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import path from 'node:path'
+import PostCSSPresetEnv from 'postcss-preset-env'
 
 export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src')
+    }
+  },
+  css: {
+    postcss: {
+      plugins: [
+        PostCSSPresetEnv({ features: { 'nesting-rules': true } }) as any
+      ]
     }
   },
   plugins: [
@@ -17,9 +25,7 @@ export default defineConfig({
     Components(),
     AutoImport({
       imports: ['vue', 'vue-router'],
-      eslintrc: {
-        enabled: true
-      }
+      eslintrc: { enabled: true }
     })
   ]
 })
