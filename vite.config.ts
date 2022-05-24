@@ -24,7 +24,7 @@ export default defineConfig({
     UnoCSS(),
     Components(),
     AutoImport({
-      imports: ['vue', 'vue-router'],
+      imports: ['vue'],
       eslintrc: { enabled: true }
     })
   ]

@@ -12,7 +12,7 @@ function increment() {
     <h1 class="text-3xl title">
       {{ msg }}
     </h1>
-    <h2 class="text-xl title">
+    <h2 class="text-xl text-teal-600 my-4">
       Vue3 + Vite + TypeScript + UnoCSS + ESLint
     </h2>
     <div>
