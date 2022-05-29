@@ -15,7 +15,7 @@ function increment() {
     <h2 class="text-xl text-teal-600 my-4">
       Vue3 + Vite + TypeScript + UnoCSS + ESLint
     </h2>
-    <div>
+    <div class="mt-10">
       <button class="btn" @click="increment">
         count : {{ count }}
       </button>
