@@ -15,14 +15,17 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        PostCSSPresetEnv({ features: { 'nesting-rules': true } }) as any
+        PostCSSPresetEnv({ features: { 'nesting-rules': true } })
       ]
     }
   },
   plugins: [
     Vue(),
+    // https://github.com/unocss/unocss
     UnoCSS(),
+    // https://github.com/antfu/unplugin-vue-components
     Components(),
+    // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: ['vue'],
       eslintrc: { enabled: true }

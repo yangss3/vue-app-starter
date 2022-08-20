@@ -8,7 +8,7 @@ function increment() {
 </script>
 
 <template>
-  <div class="w-1/2 mx-auto mt-150px text-center">
+  <div class="text-center">
     <h1 class="text-3xl title">
       {{ msg }}
     </h1>
@@ -17,6 +17,7 @@ function increment() {
     </h2>
     <div class="mt-10">
       <button class="btn" @click="increment">
+        <i class="i-carbon-add" />
         count : {{ count }}
       </button>
     </div>
