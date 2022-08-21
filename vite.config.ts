@@ -15,6 +15,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
+        // https://preset-env.netlify.app/
         PostCSSPresetEnv({ features: { 'nesting-rules': true } })
       ]
     }
