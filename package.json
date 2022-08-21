@@ -18,7 +18,7 @@
     "@types/node": "^18.7.8",
     "@types/postcss-preset-env": "^7.7.0",
     "@vitejs/plugin-vue": "^3.0.3",
-    "@yangss/eslint-config-vue": "^0.2.11",
+    "@yangss/eslint-config-vue": "^0.2.12",
     "@yangss/stylelint-config-vue": "^0.0.3",
     "eslint": "^8.22.0",
     "husky": "^8.0.1",
