@@ -20,5 +20,8 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
     transformerVariantGroup()
-  ]
+  ],
+  shortcuts: {
+    'btn': 'py-1 px-4 text-white rounded bg-teal-800/60 hover:bg-teal-800/70 active:bg-teal-800/80'
+  }
 })

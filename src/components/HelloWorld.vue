@@ -29,9 +29,4 @@ function increment() {
   @apply my-6 font-bold bg-clip-text text-transparent
     bg-gradient-to-br from-blue-400 to-red-500;
 }
-
-.btn {
-  @apply py-1 px-4 text-white rounded
-    bg-teal-800/60 hover:bg-teal-800/70 active:bg-teal-800/80;
-}
 </style>
