@@ -5,7 +5,7 @@
 
 <style lang="postcss">
 #app {
-  @apply
+  --at-apply:
     bg-gradient-to-r
     from-green-500
     via-green-300
