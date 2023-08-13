@@ -10,9 +10,8 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "skipLibCheck": true,
-    "preserveValueImports": true,
+    "verbatimModuleSyntax": true,
     "useDefineForClassFields": true,
-    "importsNotUsedAsValues": "error",
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
