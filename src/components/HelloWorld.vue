@@ -1,10 +1,7 @@
 <script setup lang="ts">
 defineProps<{ msg: string }>()
 
-const count = ref(0)
-function increment() {
-  count.value++
-}
+const router = useRouter()
 </script>
 
 <template>
@@ -13,12 +10,14 @@ function increment() {
       {{ msg }}
     </h1>
     <h2 class="text-xl text-teal-600 my-4">
-      Vue3 + Vite + TypeScript + UnoCSS + ESLint
+      Vue3 + VueRouter + Vite + TypeScript + UnoCSS + ESLint
     </h2>
     <div class="mt-10">
-      <button class="btn" @click="increment">
-        <i class="i-carbon-add" />
-        count : {{ count }}
+      <button class="btn mr-2" @click="router.push('/foo')">
+        /foo
+      </button>
+      <button class="btn" @click="router.push('/bar')">
+        /bar
       </button>
     </div>
   </div>

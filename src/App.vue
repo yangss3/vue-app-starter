@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Vue App Starter" />
+  <RouterView />
 </template>
 
 
