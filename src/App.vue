@@ -2,7 +2,6 @@
   <HelloWorld msg="Vue App Starter" />
 </template>
 
-
 <style lang="postcss">
 #app {
   --at-apply:

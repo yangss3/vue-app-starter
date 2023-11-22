@@ -1,28 +1,11 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "lib": ["esnext", "dom"],
-    "jsx": "preserve",
-    "strict": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "verbatimModuleSyntax": true,
-    "useDefineForClassFields": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./src/*"]
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
     },
-    "types": [
-      "vite/client"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "files": []
 }

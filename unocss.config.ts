@@ -1,6 +1,9 @@
 import {
-  defineConfig, presetUno, presetIcons,
-  transformerDirectives, transformerVariantGroup
+  defineConfig,
+  presetIcons,
+  presetUno,
+  transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
@@ -10,18 +13,18 @@ export default defineConfig({
       scale: 1.2,
       extraProperties: {
         'display': 'inline-block',
-        'vertical-align': 'middle'
+        'vertical-align': 'middle',
       },
       collections: {
-        carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default)
-      }
-    })
+        carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default),
+      },
+    }),
   ],
   transformers: [
     transformerDirectives(),
-    transformerVariantGroup()
+    transformerVariantGroup(),
   ],
   shortcuts: {
-    'btn': 'py-1 px-4 text-white rounded bg-teal-800/60 hover:bg-teal-800/70 active:bg-teal-800/80'
-  }
+    btn: 'py-1 px-4 text-white rounded bg-teal-800/60 hover:bg-teal-800/70 active:bg-teal-800/80',
+  },
 })
